@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>E-Book Romantis</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="header">
+    <h1>Glimpse of Assifa’s Story</h1>
+    <p class="subtitle">Dengarkan lagu sambil membaca cerita ini 🤍</p>
+
+    <audio id="bg-music" loop>
+      <source src="lagu.mp3" type="audio/mpeg">
+    </audio>
+
+    <button class="music-btn" onclick="playMusic()">🎶 Putar Lagu</button>
+  </div>
+
+  <div class="pdf-wrapper">
+    <div class="pdf-frame">
+      <iframe src="ebook.pdf"></iframe>
+    </div>
+  </div>
+
+<script>
+function playMusic() {
+  document.getElementById("bg-music").play();
+}
+</script>
+
+</body>
+</html>
